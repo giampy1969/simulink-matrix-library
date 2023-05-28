@@ -1,0 +1,391 @@
+Library {
+  Name			  "SMXLDEMO"
+  Version		  3.00
+  BlockDataTips		  off
+  BlockParametersDataTip  off
+  BlockAttributesDataTip  off
+  BlockPortWidthsDataTip  off
+  BlockDescriptionStringDataTip	off
+  BlockMaskParametersDataTip off
+  ToolBar		  off
+  StatusBar		  off
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Wed Oct 11 19:45:15 2000"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed Nov 21 13:49:47 2001"
+  ModelVersionFormat	  "1.%<AutoIncrement:4>"
+  ConfigurationManager	  "none"
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "SMXLDEMO"
+    Location		    [342, 60, 949, 351]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    AutoZoom		    on
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Smxl Demo 1"
+      Ports		      [0, 0, 0, 0, 0]
+      Position		      [40, 29, 136, 71]
+      OpenFcn		      "vrcmspex"
+      ShowPortLabels	      on
+      MaskDisplay	      "disp('Real\\nComposition\\nExample')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Smxl Demo 1"
+	Location		[61, 382, 169, 457]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Smxl Demo 10"
+      Ports		      [0, 0, 0, 0, 0]
+      Position		      [320, 204, 416, 246]
+      OpenFcn		      "vcrankex"
+      ShowPortLabels	      on
+      MaskDisplay	      "disp('Complex\\nRank\\nExample')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Smxl Demo 10"
+	Location		[63, 384, 171, 459]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Smxl Demo 11"
+      Ports		      [0, 0, 0, 0, 0]
+      Position		      [465, 204, 561, 246]
+      ForegroundColor	      "blue"
+      OpenFcn		      "nnex"
+      ShowPortLabels	      on
+      MaskDisplay	      "disp('Neural\\nNetwork\\nExample')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Smxl Demo 11"
+	Location		[63, 384, 171, 459]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Smxl Demo 12"
+      Ports		      [0, 0, 0, 0, 0]
+      Position		      [465, 114, 561, 156]
+      ForegroundColor	      "blue"
+      OpenFcn		      "dvss"
+      ShowPortLabels	      on
+      MaskDisplay	      "disp('Variable\\nState Space\\nExample')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Smxl Demo 12"
+	Location		[63, 384, 171, 459]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Smxl Demo 2"
+      Ports		      [0, 0, 0, 0, 0]
+      Position		      [180, 29, 276, 71]
+      OpenFcn		      "vccmspex"
+      ShowPortLabels	      on
+      MaskDisplay	      "disp('Complex\\nComposition\\nExample')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Smxl Demo 2"
+	Location		[61, 382, 169, 457]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Smxl Demo 3"
+      Ports		      [0, 0, 0, 0, 0]
+      Position		      [320, 29, 416, 71]
+      OpenFcn		      "vctrspex"
+      ShowPortLabels	      on
+      MaskDisplay	      "disp('Complex\\nTransposition\\nExample')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Smxl Demo 3"
+	Location		[61, 382, 169, 457]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Smxl Demo 4"
+      Ports		      [0, 0, 0, 0, 0]
+      Position		      [465, 29, 561, 71]
+      OpenFcn		      "vcmultex"
+      ShowPortLabels	      on
+      MaskDisplay	      "disp('Complex\\nMultiplication\\nExample')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Smxl Demo 4"
+	Location		[61, 382, 169, 457]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Smxl Demo 5"
+      Ports		      [0, 0, 0, 0, 0]
+      Position		      [40, 114, 136, 156]
+      OpenFcn		      "vrpinvex"
+      ShowPortLabels	      on
+      MaskDisplay	      "disp('Real\\nPseudoinversion\\nExample')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Smxl Demo 5"
+	Location		[63, 384, 171, 459]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Smxl Demo 6"
+      Ports		      [0, 0, 0, 0, 0]
+      Position		      [180, 114, 276, 156]
+      OpenFcn		      "vrsvdex"
+      ShowPortLabels	      on
+      MaskDisplay	      "disp('Real\\nSVD\\nExample')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Smxl Demo 6"
+	Location		[63, 384, 171, 459]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Smxl Demo 7"
+      Ports		      [0, 0, 0, 0, 0]
+      Position		      [320, 114, 416, 156]
+      OpenFcn		      "vrrankex"
+      ShowPortLabels	      on
+      MaskDisplay	      "disp('Real\\nRank\\nExample')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Smxl Demo 7"
+	Location		[63, 384, 171, 459]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Smxl Demo 8"
+      Ports		      [0, 0, 0, 0, 0]
+      Position		      [40, 204, 136, 246]
+      OpenFcn		      "vcpinvex"
+      ShowPortLabels	      on
+      MaskDisplay	      "disp('Complex\\nPseudoinversion\\nExample')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Smxl Demo 8"
+	Location		[63, 384, 171, 459]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Smxl Demo 9"
+      Ports		      [0, 0, 0, 0, 0]
+      Position		      [180, 204, 276, 246]
+      OpenFcn		      "vcpsvdex"
+      ShowPortLabels	      on
+      MaskDisplay	      "disp('Complex\\nPseudo SVD\\nExample')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Smxl Demo 9"
+	Location		[65, 386, 173, 461]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+      }
+    }
+  }
+}
