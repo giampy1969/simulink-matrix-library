@@ -7,9 +7,13 @@ SMXL (Simulink MatriX Library) it's a powerful real and complex matrix operation
 It features :
 
 -) Multiplication
+
 -) Transposition
+
 -) Singular Value Decomposition
+
 -) Pseudo-Inversion via SVD
+
 -) Other simple operations
 
 All the s-functions are written in optimized level-2 c code and are fully Real Time Workshop Compatible.
