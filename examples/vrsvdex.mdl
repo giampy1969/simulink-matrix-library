@@ -1,0 +1,451 @@
+Model {
+  Name			  "vrsvdex"
+  Version		  3.00
+  SimParamPage		  "Solver"
+  SampleTimeColors	  off
+  InvariantConstants	  off
+  WideVectorLines	  off
+  ShowLineWidths	  off
+  ShowPortDataTypes	  off
+  StartTime		  "0.0"
+  StopTime		  "499"
+  SolverMode		  "Auto"
+  Solver		  "FixedStepDiscrete"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Matrix"
+  LimitMaxRows		  off
+  MaxRows		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  IntegerOverflowMsg	  "warning"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  SignalLabelMismatchMsg  "none"
+  ConsistencyChecking	  "off"
+  ZeroCross		  on
+  SimulationMode	  "normal"
+  BlockDataTips		  on
+  BlockParametersDataTip  on
+  BlockAttributesDataTip  off
+  BlockPortWidthsDataTip  off
+  BlockDescriptionStringDataTip	off
+  BlockMaskParametersDataTip off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  BooleanDataType	  off
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "oneshot"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  Created		  "Fri Jul 21 11:39:56 2000"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "giampiero"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Oct 12 10:26:50 2000"
+  ModelVersionFormat	  "1.%<AutoIncrement:50>"
+  ConfigurationManager	  "none"
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "vrsvdex"
+    Location		    [44, 78, 609, 274]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    AutoZoom		    on
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Reference
+      Name		      "Band-Limited\nWhite Noise"
+      Ports		      [0, 1, 0, 0, 0]
+      Position		      [25, 90, 55, 120]
+      SourceBlock	      "simulink3/Sources/Band-Limited\nWhite Noise"
+      SourceType	      "Continuous White Noise."
+      Cov		      "[0.1]*ones(n*m,1)"
+      Ts		      "0.1"
+      seed		      "1:(n*m)"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Double click here to load m and n\n"
+      Ports		      [0, 0, 0, 0, 0]
+      Position		      [27, 34, 111, 59]
+      ForegroundColor	      "magenta"
+      DropShadow	      on
+      ShowName		      off
+      OpenFcn		      "m=2;n=3;"
+      ShowPortLabels	      off
+      MaskDisplay	      "disp('Load m and n')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Double click here to load m and n\n"
+	Location		[4, 437, 108, 510]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+      }
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [510, 19, 540, 51]
+      Floating		      off
+      Location		      [374, 355, 698, 594]
+      Open		      on
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      Grid		      "on"
+      TimeRange		      "500"
+      YMin		      "-1e-014"
+      YMax		      "1e-014"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "StructureWithTime"
+      LimitMaxRows	      on
+      MaxRows		      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope1"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [510, 89, 540, 121]
+      Floating		      off
+      Location		      [36, 355, 360, 594]
+      Open		      on
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      Grid		      "on"
+      TimeRange		      "500"
+      YMin		      "-1e-014"
+      YMax		      "1e-014"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "StructureWithTime"
+      LimitMaxRows	      on
+      MaxRows		      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [465, 25, 485, 45]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|+-"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum1"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [465, 95, 485, 115]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|+-"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "vrmult"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [275, 44, 320, 66]
+      ForegroundColor	      "blue"
+      SourceBlock	      "smxl/Real Matrices/vrmult"
+      SourceType	      "Simulink Matrix Library Block"
+      dims		      "[n min(m,n) min(m,n)]"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "vrmult1"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [400, 49, 445, 71]
+      ForegroundColor	      "blue"
+      SourceBlock	      "smxl/Real Matrices/vrmult"
+      SourceType	      "Simulink Matrix Library Block"
+      dims		      "[n min(m,n) m]"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "vrmult2"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [275, 114, 320, 136]
+      ForegroundColor	      "blue"
+      SourceBlock	      "smxl/Real Matrices/vrmult"
+      SourceType	      "Simulink Matrix Library Block"
+      dims		      "[m min(m,n) min(m,n)]"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "vrmult3"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [400, 119, 445, 141]
+      ForegroundColor	      "blue"
+      SourceBlock	      "smxl/Real Matrices/vrmult"
+      SourceType	      "Simulink Matrix Library Block"
+      dims		      "[m min(m,n) n]"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "vrsvd"
+      Ports		      [1, 3, 0, 0, 0]
+      Position		      [175, 44, 255, 76]
+      ForegroundColor	      "blue"
+      SourceBlock	      "smxl/Real Matrices/vrsvd"
+      SourceType	      "Simulink Matrix Library Block"
+      dims		      "[n m]"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "vrsvd1"
+      Ports		      [1, 3, 0, 0, 0]
+      Position		      [175, 114, 255, 146]
+      ForegroundColor	      "blue"
+      SourceBlock	      "smxl/Real Matrices/vrsvd"
+      SourceType	      "Simulink Matrix Library Block"
+      dims		      "[m n]"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "vrtrsp"
+      Ports		      [1, 1, 0, 0, 0]
+      Position		      [335, 60, 375, 80]
+      ForegroundColor	      "blue"
+      SourceBlock	      "smxl/Real Matrices/vrtrsp"
+      SourceType	      "Simulink Matrix Library Block"
+      dims		      "[m min(m,n)]"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "vrtrsp1"
+      Ports		      [1, 1, 0, 0, 0]
+      Position		      [335, 130, 375, 150]
+      ForegroundColor	      "blue"
+      SourceBlock	      "smxl/Real Matrices/vrtrsp"
+      SourceType	      "Simulink Matrix Library Block"
+      dims		      "[n min(m,n)]"
+    }
+    Line {
+      SrcBlock		      "vrmult1"
+      SrcPort		      1
+      DstBlock		      "Sum"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Band-Limited\nWhite Noise"
+      SrcPort		      1
+      Points		      [95, 0]
+      Branch {
+	Points			[0, -45]
+	DstBlock		"vrsvd"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -70]
+	DstBlock		"Sum"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 0]
+	Branch {
+	  Labels		  [1, 0]
+	  Points		  [0, 25]
+	  DstBlock		  "vrsvd1"
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      DstBlock		      "Scope"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "vrsvd1"
+      SrcPort		      1
+      DstBlock		      "vrmult2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "vrmult2"
+      SrcPort		      1
+      DstBlock		      "vrmult3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "vrmult3"
+      SrcPort		      1
+      DstBlock		      "Sum1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum1"
+      SrcPort		      1
+      DstBlock		      "Scope1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "vrsvd1"
+      SrcPort		      3
+      DstBlock		      "vrtrsp1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "vrsvd1"
+      SrcPort		      2
+      DstBlock		      "vrmult2"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "vrtrsp1"
+      SrcPort		      1
+      Points		      [5, 0]
+      DstBlock		      "vrmult3"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "vrsvd"
+      SrcPort		      1
+      DstBlock		      "vrmult"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "vrsvd"
+      SrcPort		      2
+      DstBlock		      "vrmult"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "vrsvd"
+      SrcPort		      3
+      DstBlock		      "vrtrsp"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "vrmult"
+      SrcPort		      1
+      DstBlock		      "vrmult1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "vrtrsp"
+      SrcPort		      1
+      Points		      [5, 0]
+      DstBlock		      "vrmult1"
+      DstPort		      2
+    }
+  }
+}

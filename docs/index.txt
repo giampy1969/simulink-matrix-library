@@ -1,0 +1,39 @@
+==========================================================================
+ftp://ftp.mathworks.com/pub/contrib/v5/simulink/smxl/
+
+The Simulink MatriX Library (SMXL) consists in a collection of blocks 
+that allow (varying) matrices to be handled directly in Simulink.
+
+The signals that flow through Simulink connections, which in general are
+the only quantities allowed to vary with time, can be scalars or vectors.
+It is not permitted to carry a matrix through a connection, that is,
+we could certainly carry a p by n matrix as a vector of p*n entries, 
+but all the existing Simulink built-in blocks that will process this 
+p*n by 1 vector will still treat it just like a vector. 
+As a consequence, every time that we have to process the p by n
+matrix we have to decompose it into its elements. 
+These decompositions, and the successive compositions make it very 
+uncomfortable to deal with varying matrices in the Simulink environment.
+
+The smxl library solves this problem, allowing operations like 
+matrix multiplication, transposition, and pseudoinversion to be 
+performed without any decomposition or type conversion.
+
+The library contains several examples as well as a pdf paper that gives
+further details and explains several motivations for using the blocks.  
+A library of ROTATION MATRICES which can be very useful 
+for simulations of rigid bodies in 3D space, is included.
+
+All blocks are compatible with Real Time Workshop.
+Smxl has been developed under Matlab 5.3.1 and tested
+under several platforms.
+
+See the file README.TXT for instructions about how to install SMXL.
+
+October 2000
+
+Giampiero Campa, PhD, Research Assistant Professor
+West Virginia University, Aerospace Engineering Dept.
+Morgantown, WV, 26506-6106, USA
+campa@cemr.wvu.edu; gcampa@supereva.it
+==========================================================================

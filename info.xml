@@ -1,0 +1,24 @@
+<productinfo>
+
+<matlabrelease>12</matlabrelease>
+<name>Simulink Matrix Library</name>
+<type>blockset</type>
+<icon>$toolbox/simulink/simulink/simulinkicon.gif</icon>
+
+<list>
+
+<listitem>
+<label>Help</label>
+<callback>doc smxl/</callback>
+<icon>$toolbox/matlab/icons/book_sim.gif</icon>
+</listitem>
+
+<listitem>
+<label>Launch SMXL</label>
+<callback>smxl</callback>
+<icon>$toolbox/simulink/simulink/simulinkicon.gif</icon>
+</listitem>
+
+</list>
+
+</productinfo>
