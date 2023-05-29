@@ -1,6 +1,8 @@
 # simulink-matrix-library
 Matrix support for Simulink&reg; 3 (MATLAB&reg; R11).
 
+[![View smxl on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/266-smxl)
+
 SMXL (Simulink MatriX Library) it's a powerful real and complex matrix operations support for Simulink 3
 (R11.1) that works fine for later versions as well.
 
